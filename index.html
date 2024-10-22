@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img-consul/">
+    <link rel="stylesheet" href="consultorio.css">
+    <title>DermaClinics</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+     <main>
+    <header>
+        <!-- Conteúdo do cabeçalho -->
+        <div class="content">
+            <a href="inicio.html" class="brand-name">Dermaclinics</a>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    &#9776; <!--Ícone de menu-->
+                </div>
+                <ul class="ul" id="menu">
+                    <li><a href="login/cadastro.html">LOGIN/CADASTRO</a></li>
+                    <li><a href="tratamento.html">TRATAMENTOS</a></li>
+                    <li><a href="tecnologia.html">TECNOLOGIAS</a></li>
+                    <li><a href="consutorio.html">CONSULTÓRIO</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+    <!-- Fim do cabeçalho -->
+
+
+    <!--Conteúdo-->
+<!--"Consultório" e a linha marrom-->
+    <section class="titulo-consultorio" aria-labelledby="consultorio-title">
+        <h2 id="consultorio-title">CONSULTÓRIO</h2>
+        <div class="linha1-marrom"></div>
+    </section>
+<!--Fim "Consultório" e a linha marrom-->
+
+<!--imagens do consultório-->
+<div class="container-imagens">
+    <div class="imagem" onclick="openModal(this)">
+        <img src="img-consul/consultorio1.jpg" class="img-fluid" alt="Imagem 1">
+    </div>
+    <div class="imagem" onclick="openModal(this)">
+        <img src="img-consul/consultorio2.jpg" class="img-fluid" alt="Imagem 2">
+    </div>
+    <div class="imagem" onclick="openModal(this)">
+        <img src="img-consul/consultorio3.jpg" class="img-fluid" alt="Imagem 3">
+    </div>
+</div>
+<!--Fim da imagens do consultório-->
+
+
+<!--Efeito de visualização aumentada-->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>  <!--Fim do efeito de visualização aumentada-->
+
+<!--"Equipe" e a linha marrom-->
+<section class="titulo-consultorio" aria-labelledby="consultorio-title">
+    <h2 id="consultorio-title">EQUIPE</h2>
+    <div class="linha1-marrom"></div>
+</section>
+<!--Fim "Equipe" e a linha marrom-->
+
+<!--Doutora Larissa-->
+<section class="sobre">
+    <div class="interface">
+        <div class="flex">
+            <!-- Imagem primeiro -->
+            <div class="img-sobre">
+                <img src="img-consul/larissa.jpg" alt="Doutora Larissa">
+            </div>
+
+            <!-- Texto ao lado direito -->
+            <div class="txt-sobre">
+                <h2>Conheça a</h2>
+                <h1>Dra.Larissa Martins</h1>
+                <h4>CRM 178.924 | RQE 76432</h4>
+                
+                <ul>
+                    <li>Doutorado em Dermatologia pela UFRGS</li>
+                    <li>Formação Avançada em Cirurgia Dermatológica pelo Hospital das Clínicas de Porto Alegre</li>
+                    <li>Professora Adjunta de Dermatologia Pediátrica na UFMG</li>
+                    <li>Residência Médica em Dermatologia no HC-SP</li>
+                    <li>Consultora em Dermatologia Digital e Telemedicina</li>
+                    <li>Membro da Sociedade Internacional de Dermatologia</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sobre">
+    <div class="interface">
+        <div class="flex">
+            <!-- Texto ao lado esquerdo desta vez -->
+            <div class="txt-sobre">
+                <h2>Conheça a</h2>
+                <h1>Dra. fernanda Souza</h1>
+                <h4>CRM 185.432 | RQE 78945</h4>
+
+                <ul>
+                    <li>Especialização em Dermatologia Estética pela USP</li>
+                    <li>Formação em Laserterapia e Cosmiatria</li>
+                    <li>Mestre em Dermatologia Clínica pela UFRJ</li>
+                    <li>Residência Médica no Hospital Albert Einstein</li>
+                    <li>Palestrante em congressos internacionais de Dermatologia</li>
+                    <li>Membro da Academia Brasileira de Dermatologia</li>
+                </ul>
+            </div>
+
+            <!-- Imagem à direita desta vez -->
+            <div class="img-sobre">
+                <img src="img-consul/fernanda.jpg" alt="Doutora Camila">
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+<!--Fim doutora Larissa-->
+
+<footer>
+    <div id="footer_content">
+        <!-- Seção de Contato e Redes Sociais -->
+        <div id="footer_contacts">
+            <h1>Clínica de Dermatologia</h1>
+            <p>Cuidando da sua pele com carinho e expertise.</p>
+
+            <div id="footer_social_media">
+                <!-- Links para redes sociais da clínica -->
+                <a href="https://www.instagram.com/dermacliniics/?igsh=Zm9hcWFtd2RubTk2" class="footer-link" id="instagram" title="Siga-nos no Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/senaisaopaulo/?locale=pt_BR" class="footer-link" id="facebook" title="Curta nossa página no Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://web.whatsapp.com/" class="footer-link" id="whatsapp" title="Envie uma mensagem pelo WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Links úteis sobre a clínica -->
+        <ul class="footer-list">
+            <li>
+                <h3>Sobre Nós</h3>
+            </li>
+            <li>
+                <a href="quemsomos.html" class="footer-link">Quem Somos</a>
+            </li>
+            <li>
+                <a href="serviços.html" class="footer-link">Nossos Serviços</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Equipe</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Contato</a>
+            </li>
+        </ul>
+
+        <!-- Blog com dicas e informações -->
+        <ul class="footer-list">
+            <li>
+                <h3>Blog</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Cuidados com a Pele</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Tratamentos e Procedimentos</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Dicas de Beleza</a>
+            </li>
+        </ul>
+
+        <!-- Assine nossa newsletter -->
+        <div id="footer_subscribe">
+            <h3>Assine Nossa Newsletter</h3>
+
+            <p>
+                Receba as últimas novidades e dicas sobre cuidados com a pele diretamente no seu e-mail.
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email" placeholder="Seu e-mail">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Direitos autorais -->
+    <div id="footer_copyright">
+        &#169; 2024 Todos os direitos reservados
+    </div>
+</footer>
+    <script src="consultorio.js"></script>
+</body>
+</html>

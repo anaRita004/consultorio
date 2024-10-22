@@ -1,0 +1,458 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D2C1AF; 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 3vw;
+    color: #543320;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+/* Menu de navegação */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    margin-right: 3vw; 
+    justify-content: flex-start; 
+}
+
+.ul li {
+    margin-left: 2vw; 
+    margin-top: 1.5vw;
+}
+
+.ul a {
+    text-decoration: none;
+    color: #7C4F39;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: #BD966D;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/*Fim do cabeçalho*/
+
+/*Conteúdo linha marrom e "consultório" */
+.titulo-consultorio h2 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #542020;
+    text-align: center;
+    font-size: 1.7rem; 
+    margin-top: 40px; 
+}
+
+.linha1-marrom {
+    height: 4px;
+    background-color: #BD966D; 
+    margin: 5px auto; 
+    width: 6%;
+}
+
+/*Imagens do consultório*/
+
+.container-imagens {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px 20px; 
+    gap: 10px; 
+    max-width: 95%;
+    margin: 20px auto 0; 
+    box-sizing: border-box; 
+}
+
+.imagem {
+    flex: 1 1 40%; 
+    max-width: 350px; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+}
+
+.img-fluid {
+    width: 100%; 
+    height: auto;
+}
+/*Fim da imagem do consultório*/
+
+/*Efeito de visualização aumentada*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.646); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 80%; 
+    max-height: 80%; 
+    margin: 5% 25%; 
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos gerais */
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    display: flex;
+    align-items: flex-start; 
+    gap: 60px;
+    flex-wrap: wrap; 
+}
+
+.sobre .txt-sobre {
+    color: #542020;
+    flex: 1;
+    margin-left: 60px; 
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 32px; 
+    margin-bottom: 5px;
+    color: #543320; 
+}
+
+.sobre .txt-sobre h1 {
+    font-size: 36px; 
+    margin: 0; 
+    color: #543320; 
+}
+
+.sobre .txt-sobre h4 {
+    font-size: 18px; 
+    color: #BD966D; 
+    margin: 5px 0 20px;
+}
+
+.sobre .txt-sobre ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre ul li {
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+
+.sobre .img-sobre img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    margin-left: 60px;
+    flex: none; 
+}
+
+/*Rodapé*/
+
+:root {
+    --color-neutral-0: #512600;
+    --color-neutral-10: #907761;
+    --color-neutral-30: #ffffff;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+main {
+    height: 240vh;
+}
+
+footer {
+    
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #540000;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre .txt-sobre {
+        margin-left: 20px; 
+    }
+
+    .sobre .txt-sobre h2,
+    .sobre .txt-sobre h1,
+    .sobre .txt-sobre h4
+    {
+        font-size: 22px; 
+    }
+
+    .sobre .txt-sobre ul li{
+        font-size: 17px;
+    } 
+
+    .sobre .img-sobre img {
+        max-width: 200px; 
+    }
+
+    section.sobre .flex {
+        flex-direction: column;
+    }
+
+    .sobre .txt-sobre ul {
+        padding-left: 0;
+        list-style-position: inside;
+        text-align: left; 
+    }
+    section.sobre .flex {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .sobre .img-sobre {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre .img-sobre img {
+        max-width: 60%; 
+        height: auto;
+    }
+
+    header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .ul {
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .ul.active {
+        display: flex; 
+    }
+
+    .ul li {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .titulo-consultorio h2 {
+        font-size: 1.5rem;
+    }
+
+    .linha1-marrom {
+        width: 10%; 
+    }
+
+    .imagem {
+        flex: 1 1 100%; 
+      }
+
+    .modal-content{
+        margin: 30% 10%; 
+    }
+    main {
+    height: 400vh;
+}
+    
+}
